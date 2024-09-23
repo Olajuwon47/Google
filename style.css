@@ -6,6 +6,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-size: 1rem;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, rgb(3, 56, 26), rgb(24, 121, 24));
 }
@@ -16,6 +17,7 @@ body {
 
 .logo img {
     max-width: 270px;
+    height: auto;
 }
 
 .search-bar-container {
@@ -72,19 +74,27 @@ body {
     }
   }
 
-  @media (max-width: 768px) {
-    /* Styles for tablets and below */
-    body {
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 480px) {
-    /* Styles for smartphones */
-    body {
-      font-size: 14px;
+  /* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .main-nav, body {
+      font-size: 0.8em;
     }
   }
   
+  /* Medium devices (landscape tablets, 768px to 992px) */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .main-nav, body {
+      font-size: 1em;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and above) */
+  @media only screen and (min-width: 993px) {
+    .main-nav, body {
+      font-size: 1.2em;
+    }
+}
+
 li{
     padding:20px;
 }
