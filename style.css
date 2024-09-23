@@ -71,6 +71,20 @@ body {
       padding: auto 0;
     }
   }
+
+  @media (max-width: 768px) {
+    /* Styles for tablets and below */
+    body {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 480px) {
+    /* Styles for smartphones */
+    body {
+      font-size: 14px;
+    }
+  }
+  
 li{
     padding:20px;
 }
