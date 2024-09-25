@@ -6,35 +6,60 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-size: 1rem;
+   /* font-size: 1rem;*/
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, rgb(3, 56, 26), rgb(24, 121, 24));
+   /* background: linear-gradient(to right, rgb(3, 56, 26), rgb(24, 121, 24));*/
 }
 
-.logo {
+/*.logo {
     margin-bottom: 20px;
 }
 
 .logo img {
     max-width: 270px;
     height: auto;
-}
+}*/
 
 .search-bar-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+     /*flex-direction: column;*/
+    align-items: stretch;
     width: 100%;
     max-width: 400px;
+    position: relative;
+    
 }
 
 .search-input {
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px 60px;
     border-radius: 25px;
     border: 1px solid #dfe1e5;
     font-size: 18px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-container .icon-left,
+.search-bar-container .icon-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon-left {
+    left: 15px;
+}
+
+.icon-right {
+    right: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.icon-left img, .icon-right img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
 .button-group {
@@ -46,7 +71,7 @@ body {
     margin: 5px;
     font-size: 14px;
     border: 1px solid black;
-    border-radius: 25px;
+   /* border-radius: 25px;*/
     background-color: rgb(4, 77, 36);
     cursor: pointer;
 }
@@ -55,56 +80,109 @@ body {
     background-color: rgb(24, 184, 131)
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.main-nav{
+/*.main-nav{
     display: flex;
     list-style: none;
     font-size: 90%;
     text-transform: uppercase;
     margin: 0;
+    padding-top:1px; 
+    margin-top: -150px; 
+}*/
+
+p{
+    color: rgb(115, 115, 214);
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: -150px;
+}
+
+ h4{
+    text-align:left;
+    padding-left: 30px;
+   padding-top:10px ;
+    margin-top: -30px;
+    background-color: rgb(110, 110, 81);
+}
+
+.line{
+    display: inline-block;
+    line-height: 28px;
+    /*margin-bottom: -15px;*/
+}
+
+.line a {
+    word-spacing: .10px;
+} 
+h5{
+    text-decoration-line: underline;
+    cursor: pointer;
 }
 @media only screen and (max-width:600px) {
-    .main-nav {
-      font-size:0.5em;
+    .footer {
+      font-size:1em;
       padding: auto 0;
     }
+    body{
+        background: linear-gradient(to right, rgb(3, 56, 26), rgb(24, 121, 24))
+    }
+    .search-input{
+        width: 12px;
   }
+}
 
-  /* Small devices (portrait tablets and large phones, 600px to 768px) */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-    .main-nav, body {
+  /* Small devices (portrait tablets and large phones, 600px to 768px) 
+@media only screen and  (max-width: 768px) {
+    .footer{
       font-size: 0.8em;
     }
+
+    .search-input{
+        width: 12rem;
+    }
+
+    body{
+        background: linear-gradient(to right, rgb(14, 14, 14)  rgb(77, 78, 77));
+    }
   }
   
-  /* Medium devices (landscape tablets, 768px to 992px) */
-  @media only screen and (min-width: 769px) and (max-width: 992px) {
-    .main-nav, body {
+  /* Medium devices (landscape tablets, 768px to 992px) 
+  @media only screen and (width: 992px) {
+    .footer {
       font-size: 1em;
     }
-  }
+  
+
+    body{
+        background: linear-gradient(to right, rgb(17, 18, 18)  rgb(125, 173, 155));
+    }
+  }*/
   
   /* Large devices (desktops, 992px and above) */
-  @media only screen and (min-width: 993px) {
-    .main-nav, body {
-      font-size: 1.2em;
+  @media only screen and (max-width: 993px) {
+    .footer {
+      font-size: o.8em;
+      display:flex ;
+
     }
+    .search-input{
+        width: 30rem;
+    }
+
+    /*.line{
+        width: 15rem;
+    }*/
+
+
+    body{
+        background: linear-gradient(to right, rgb(6, 72, 47),  rgb(44, 145, 107));
+    }
+    
 }
 
-li{
-    padding:20px;
-}
 a{
     color: black;
     text-decoration: none;
-}
-.push{
-    margin-left:auto ;
-    cursor: pointer;
 }
 
 footer {
@@ -112,12 +190,12 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    padding: 15px 0;
-    background-color: rgb(110, 110, 81);
+   /* padding: 3px 0;*/
+    background-color: rgb(110, 110, 81);    
 }
 
 footer a {
-    margin: 0 15px;
+    margin: 0 5px;
     text-decoration: none;
     color: black;
      text-transform: uppercase;
