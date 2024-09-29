@@ -139,6 +139,10 @@ h5{
     .search-input{
         width: 12px;
   }
+  nav{
+    width: 12px;
+}
+
 }
   
   /* Large devices (desktops, 992px and above) */
@@ -154,7 +158,9 @@ h5{
     body{
         background: linear-gradient(to right, rgb(12, 12, 12),  rgb(12, 12, 12));
     }
-    
+    nav{
+        width: 30rem;
+    }
 }
 
 a{
